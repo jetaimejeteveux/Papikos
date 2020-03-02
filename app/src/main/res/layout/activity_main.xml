@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_gradient"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_kotak"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:id="@+id/Linear2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Kosan"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/edt_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Kos" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerJenis"
+            android:entries="@array/jenisKos"/>
+        <EditText
+            android:id="@+id/edt_fasilitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fasilitas Kos" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat Kos"
+            android:id="@+id/edt_alamat"/>
+        <EditText
+            android:id="@+id/edt_kontak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kontak Kos" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama pemilik"
+            android:id="@+id/edt_pemilik"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga Kos"
+            android:id="@+id/edt_harga"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_marginTop="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:text="Add"
+                android:textColor="#FFF"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bg_button"
+                android:text="View"
+                android:textColor="#FFF"
+                android:layout_weight="1"
+                android:id="@+id/btn_view"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
