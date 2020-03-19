@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/bg_gradien"
-    android:padding="8dp">
-
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_marginTop="120dp"
         android:layout_width="match_parent"
@@ -25,17 +19,17 @@
             android:textSize="20sp"
             android:layout_gravity="center"/>
         <EditText
-            android:id="@+id/edt_nama"
+            android:id="@+id/edt_update_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nama Kos" />
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinnerJenis"
+            android:id="@+id/spinner_update_jenis"
             android:entries="@array/jenisKos"/>
         <EditText
-            android:id="@+id/edt_fasilitas"
+            android:id="@+id/edt_update_fasilitas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Fasilitas Kos" />
@@ -43,9 +37,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Alamat Kos"
-            android:id="@+id/edt_alamat"/>
+            android:id="@+id/edt_update_alamat"/>
         <EditText
-            android:id="@+id/edt_kontak"
+            android:id="@+id/edt_update_kontak"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Kontak Kos" />
@@ -53,18 +47,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nama pemilik"
-            android:id="@+id/edt_pemilik"/>
+            android:id="@+id/edt_update_pemilik"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Harga Kos"
-            android:id="@+id/edt_harga"/>
+            android:id="@+id/edt_update_harga"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <Button
-                android:id="@+id/btn_add"
+                android:id="@+id/btn_update"
                 android:layout_marginTop="32dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,15 +66,7 @@
                 android:text="Add"
                 android:textColor="#FFF"
                 android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:background="@drawable/bg_button"
-                android:text="View"
-                android:textColor="#FFF"
-                android:layout_weight="1"
-                android:id="@+id/btn_view"/>
+
         </LinearLayout>
 
     </LinearLayout>
